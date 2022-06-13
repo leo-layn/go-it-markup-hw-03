@@ -60,7 +60,6 @@ h2{
 /*Студия*/
 header .container{
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -276,7 +275,7 @@ header .container{
 }
 
 .team-head{
-    margin-top: 94px;
+    padding-top: 94px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -284,7 +283,7 @@ header .container{
 .team-list{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;;
+    padding-bottom: 94px;
 }
 
 .team-list .item{
@@ -328,7 +327,7 @@ footer{
 /*Контакты*/
 .address{
     margin-top: 20px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 
     font-style: normal;
 }
