@@ -9,6 +9,7 @@
     --bg-button-color: #2196F3;
     --bg-buton-hover-color: #1b65a2;
     --button-border-color: transparent;
+    --border-example-color: #EEEEEE;
 }
 
 html{
@@ -27,13 +28,23 @@ body{
 
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03;
 }
 
 h1,
 h2, 
-h3{
+h3,
+h4,
+h5,
+h6
+p{
     margin: 0;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
 }
 
 ul{
@@ -42,10 +53,23 @@ ul{
     list-style: none;
 }
 
-h2{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17em;
+section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address{
+    font-style: normal;
+}
+
+.link{
+    text-decoration: none;
 }
 
 .container{
@@ -71,8 +95,7 @@ header .container{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19em;
-    text-decoration: none;
+    line-height: 1.19;
 }
 
 .logo-top{
@@ -97,9 +120,8 @@ header .container{
 
     color: var(--main-text-color);
     font-weight: 500;
-    line-height: 1.14em;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+    line-height: 1.14;
+    letter-spacing: 0.02;
 }
 
 .navigate-list-main > .item + .item{
@@ -112,7 +134,7 @@ header .container{
 }
 
 .contacts{
-    margin-left: 331px;
+    margin-left: auto;
 }
 
 .contacts .item{
@@ -135,7 +157,6 @@ header .container{
 .tel-head{ 
     color: var(--second-text-color);
     font-weight: 500;
-    text-decoration: none;
 }
 
 .mail-head:hover,
@@ -147,27 +168,24 @@ header .container{
 
 /*Заказ услуги*/
 .order{
-    display: flex;
-    flex-direction: column;
     padding-top: 200px;
     padding-bottom: 200px;
 
-    color: var(--main-bg-color);
     background-color: var(--bg-color-section-black);
-    letter-spacing: 0.06em;
     text-align: center;
 }
 
 
 .order-head{
-    width: 700px;
-    flex-wrap: wrap;
+    width: 696px;
     margin-right: auto;
     margin-left: auto;
 
+    color: var(--main-bg-color);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36em;
+    line-height: 1.36;
+    letter-spacing: 0.06;
     text-transform: uppercase;
 }
 
@@ -175,8 +193,8 @@ header .container{
     align-items: center;
     text-align: center;
     margin-top: 30px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
 
@@ -185,8 +203,8 @@ header .container{
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88em;
-    letter-spacing: 0.03em;
+    line-height: 1.88;
+    letter-spacing: 0.06;
     
     border-color: var(--button-border-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -214,14 +232,8 @@ header .container{
 }
 
 /*Наши сильные стороны*/
-.strongths{
-    margin-top: 94px;
-    margin-bottom: 94px;
-}
-
 .strongths-list{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .strongths-list .item{
@@ -237,27 +249,28 @@ header .container{
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.88em;
+    line-height: 1.88;
     text-transform: uppercase;
 }
 
 .strongths-list p{
-    margin: 0;
     color: var(--second-text-color);
-    line-height: 1.71em;
+    line-height: 1.71;
 }
 
 /*Чем мы занимаемся*/
+.doing{
+    padding-top: 0;
+}
+
 .doing-head{
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
 .doing-list{
-    
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;
 }
 
 .doing-list .item{
@@ -275,66 +288,64 @@ header .container{
 }
 
 .team-head{
-    padding-top: 94px;
     margin-bottom: 50px;
     text-align: center;
 }
 
 .team-list{
     display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 94px;
 }
 
 .team-list .item{
-    width: calc((100%-90px) / 4);
+    width: 270px;
+    margin-right: 30px;
+    background-color: var(--main-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .item:nth-child(4n){
     margin-right: 0;
 }
 
-.team-list h3{
-    margin-top: 30px;
+.team-name{
+    padding-top: 30px;
+}
 
+.team-list h3{
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19em;
+    line-height: 1.19;
     text-align: center;
 }
 
 .team-list p{
-    margin: 0;
     margin-top: 10px;
-
+    padding-bottom: 30px;
+    
     color: var(--second-text-color);
     font-size: 16px;
-    line-height: 1.19em;
+    line-height: 1.19;
     text-align: center;
 }
 
 /*Footer*/
 footer{
     background-color: var(--bg-color-section-black);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-bot{
-    margin-top: 60px;
-
     color: var(--main-bg-color);
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /*Контакты*/
-.address{
-    margin-top: 20px;
-    padding-bottom: 60px;
-
-    font-style: normal;
-}
-
 .address-locate{
     color: var(--main-bg-color);
-    text-decoration: none;
+    line-height: 1.71;
 }
 
 .address-locate:hover,
@@ -344,7 +355,7 @@ footer{
 
 .address-link{
     color: var(--footer-contacts-color);
-    text-decoration: none;
+    line-height: 1.71;
 }
 
 .address-link:hover,
@@ -361,8 +372,7 @@ footer{
 .navigate-list-portf{
     display: flex;
     justify-content: center;
-    margin-top: 94px;
-    margin-bottom: 24px;
+    margin-bottom: 34px;
 }
 
 .navigate-list-portf .item + .item{
@@ -371,14 +381,16 @@ footer{
 
 
 .navigate-btn{
+    padding-left: 22px;
+    padding-right: 22px;
     color: var(--main-text-color);
     background: var(--bg-color-section-white);
     
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62em;
-    letter-spacing: 0.03em;
+    line-height: 1.62;
+    letter-spacing: 0.03;
 
     text-align: center;
     border-style: none;
@@ -398,12 +410,12 @@ footer{
 .example-list{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;
 }
 
 .example-list > .item{
-    width: calc((100%-60px)/3);
+    width: 370px;
     margin-bottom: 30px;
+    margin-right: 30px;
 }
 
 .example-list .item:nth-child(3n){
@@ -414,26 +426,22 @@ footer{
     margin-bottom: 0;
 }
 
+.example-name{
+    padding: 20px auto;
+    border: 1px solid var(--border-example-color);
+    border-top: none;
+}
+
 .example-list h3{
-    margin-top: 20px;
-    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 2em;
-    letter-spacing: 0.06em;
+    line-height: 2;
+    letter-spacing: 0.06;
 }
 
 .example-list p{
-    margin: 0;
-    margin-bottom: 20px;
+    margin-top: 4px;
     color: var(--second-text-color);
     font-size: 16px;
-    line-height: 1.88em;
+    line-height: 1.88;
 }
-
-
-/*основной цвет текста #212121*/
-/* второстипенный цвет текста #757575*/
-/*белый текст #FFFFFF*/
-/* футер e-mail и телефон #FFFFFF99*/
-/* цвет активной ссылки при наведении #2196F3*/
