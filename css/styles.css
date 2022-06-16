@@ -10,6 +10,7 @@
     --bg-buton-hover-color: #1b65a2;
     --button-border-color: transparent;
     --border-example-color: #EEEEEE;
+    --border-header-color: #ECECEC;
 }
 
 html{
@@ -28,7 +29,7 @@ body{
 
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
 }
 
 h1,
@@ -36,7 +37,7 @@ h2,
 h3,
 h4,
 h5,
-h6
+h6,
 p{
     margin: 0;
 }
@@ -47,11 +48,6 @@ h2{
     line-height: 1.17;
 }
 
-ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
 
 section{
     padding-top: 94px;
@@ -66,6 +62,12 @@ img{
 
 address{
     font-style: normal;
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .link{
@@ -100,8 +102,6 @@ header .container{
 
 .logo-top{
     margin-right: 93px;
-    margin-top: 24px;
-    margin-bottom: 24px;
 }
 
 .logo-web{
@@ -121,7 +121,7 @@ header .container{
     color: var(--main-text-color);
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02;
+    letter-spacing: 0.02em;
 }
 
 .navigate-list-main > .item + .item{
@@ -185,7 +185,7 @@ header .container{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
@@ -195,8 +195,8 @@ header .container{
     margin-top: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
 
     color: var(--main-bg-color);
     background-color: var(--bg-button-color);
@@ -204,11 +204,11 @@ header .container{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.06;
+    letter-spacing: 0.06em;
     
-    border-color: var(--button-border-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
     cursor: pointer;
 }
 
@@ -264,7 +264,7 @@ header .container{
 }
 
 .doing-head{
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -308,10 +308,6 @@ header .container{
     margin-right: 0;
 }
 
-.team-name{
-    padding-top: 30px;
-}
-
 .team-list h3{
     font-weight: 500;
     font-size: 16px;
@@ -321,12 +317,16 @@ header .container{
 
 .team-list p{
     margin-top: 10px;
-    padding-bottom: 30px;
     
     color: var(--second-text-color);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+}
+
+.team-name{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*Footer*/
@@ -368,11 +368,14 @@ footer{
 }
 
 /*Портфолио*/
+.header-portfolio{
+    border-bottom: 1px solid var(--border-header-color);
+}
 /*Навигация по странице*/
 .navigate-list-portf{
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .navigate-list-portf .item + .item{
@@ -383,6 +386,8 @@ footer{
 .navigate-btn{
     padding-left: 22px;
     padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     color: var(--main-text-color);
     background: var(--bg-color-section-white);
     
@@ -390,9 +395,10 @@ footer{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    letter-spacing: 0.03;
-
+    letter-spacing: 0.03em;
     text-align: center;
+    
+    border-radius: 4px;
     border-style: none;
     cursor: pointer;
 }
@@ -401,8 +407,6 @@ footer{
 .navigate-btn:focus{
     color: var(--main-bg-color);
     background-color: var(--bg-button-color);
-    
-    border-radius: 4px; 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -427,7 +431,7 @@ footer{
 }
 
 .example-name{
-    padding: 20px auto;
+    padding: 20px 24px;
     border: 1px solid var(--border-example-color);
     border-top: none;
 }
@@ -436,7 +440,7 @@ footer{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06;
+    letter-spacing: 0.06em;
 }
 
 .example-list p{
